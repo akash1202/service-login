@@ -1,0 +1,39 @@
+server:
+  port: 8083
+logging:
+  level:
+    org.springframework: DEBUG
+
+#swagger-ui custom path
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+openapi: '3.0.0'
+info:
+  title: "register"
+  description: "Optional multiline or single-line description"
+  version: "0.0.1"
+  servers:
+    url: "http://localhost:8081/"
+    description: "Optional server description"
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  datasource:
+    #for localhost
+#    url: jdbc:postgresql://localhost:5432/moves
+#    username: postgres
+#    password: root
+    url: jdbc:postgresql://localhost:5432/moves
+    username: compose-postgres
+    password: compose-postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
+    hibernate:
+#      dialect: org.hibernate.dialect.PostgreSQLDialect
+      ddl-auto: create
