@@ -2,7 +2,7 @@ FROM gradle:7.5.1-jdk17-alpine AS build
 COPY --chown=gradle:gradle . /home/gradle/src
 WORKDIR /home/gradle/src
 RUN gradle build --no-daemon
-FROM openJDK:17-jre-slim
+FROM openjdk:17-jre-slim
 EXPOSE 8083
 RUN mkdir /app
 COPY --from=build /home/gradle/src/build/libs/*.jar /app/service-login.jar
