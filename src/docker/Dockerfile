@@ -1,4 +1,4 @@
-from Postgres:12
+from postgres:12
 RUN mkdir temp
 RUN groupadd non-root-postgres-group
 RUN useradd non-root-postgres-user --group non-root-postgres-group
