@@ -25,7 +25,7 @@ spring:
     #for localhost
    url: "jdbc:postgresql://postgresql:5432/moves?createDatabaseIfNotExist=true"
    username: postgres
-   password: root
+   password: postgres
 #     url: jdbc:postgresql://localhost:5432/moves
 #     username: compose-postgres
 #     password: compose-postgres
