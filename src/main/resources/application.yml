@@ -23,7 +23,7 @@ spring:
       matching-strategy: ant_path_matcher
   datasource:
     #for localhost
-   url: "jdbc:postgresql://postgresql:5432/moves?createDatabaseIfNotExist=true"
+   url: "jdbc:postgresql://172.30.241.7:5432/moves?createDatabaseIfNotExist=true"
    username: postgres
    password: postgres
 #     url: jdbc:postgresql://localhost:5432/moves
