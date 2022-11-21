@@ -18,14 +18,16 @@ info:
     description: "Optional server description"
 
 spring:
+  application:
+    name:"login-service"
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
   datasource:
     #for localhost
-    url: "jdbc:postgresql://localhost:5432/moves?createDatabaseIfNotExist=true"
-    username: postgres
-    password: root
+#    url: "jdbc:postgresql://localhost:5432/moves?createDatabaseIfNotExist=true"
+#    username: postgres
+#    password: root
 #    url: "jdbc:postgresql://db:5432/moves?createDatabaseIfNotExist=true"
 #    username: abc
 #    password: abc
