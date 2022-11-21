@@ -9,4 +9,4 @@ COPY --from=build /home/gradle/src/build/libs/*.jar /app/service-login.jar
 # COPY build/libs/*.jar app.jar
 # ARG JAR_FILE="build/libs/service-login-0.0.1-SNAPSHOT.jar"
 # COPY ${JAR_FILE} /app/app.jar
- ENTRYPOINT [ "java","-jar","/app/service-login.jar" ]
+ENTRYPOINT [ "java","-jar","/app/service-login.jar" ]
